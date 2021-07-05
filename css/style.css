@@ -6,18 +6,14 @@ body{
 
 /* COLOURED SECTION */
 .coloured{
+
     background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
-
-    /* background-color: #583fbe; */
     padding: 3% 7%;
     border-radius: 0 0 60px 60px;
 }
 /* SUB COLOURED */
 .sub-coloured{
-    /* background-color: #5f0a87; */
-    /* background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%); */
-
     background-color: #583fbe;
     padding: 1.6rem 2rem;
     border-radius: 60px 60px 60px 60px;
@@ -32,16 +28,9 @@ body{
     margin-bottom: 20px;
     background-color: #fff;
     border-radius: 60px 60px 60px 60px;
-    /* box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 10px; */
-    /* box-shadow: 5px 10px; */
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-/* .sub-not-coloured:hover{
-    box-shadow: 5px 10px; 
 
-} */
 /* NAV BAR */
 .logo{
     width: 5rem;
@@ -60,7 +49,6 @@ body{
 }
 h1{
     font-family: 'Montserrat Black', sans-serif; 
-    /* font-weight: 900; */
     font-size: 6rem;
     color: #fff;
 }
@@ -89,9 +77,6 @@ span{
     font-family: 'Montserrat Black', sans-serif;
     font-weight: 900;
 }
-/* .text-me{
-    font-family: 'Sacramento';
-} */
 .pro{
     font-family: 'VT323', monospace;
     color: #f8f7aa;
@@ -103,7 +88,6 @@ span{
 .timeline{
 
     position:relative;
-    /* width:80rem; */
     margin:1rem auto;
 }
 .timeline:after{
@@ -117,11 +101,10 @@ span{
     left:50%;
     margin-left: -3px;
 }
-.container{
+.card{
     width: 50%;
-    position: relative;
     margin: 0;
-    padding: 10px 40px;
+    padding: 10px 30px;
 }
 
 .left{
@@ -130,11 +113,8 @@ span{
 .right{
     left:50%
 }
-.content{
-    /* background-color: #f8f8f8; */
+.card-body{
     background-color: #f5f7fa;
-/* background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
-
     position: relative;
     padding: 20px;
     border-radius: 6px;
@@ -148,7 +128,6 @@ span{
 }
 .skill{
     text-align: right;
-    /* padding: 10px 10px; */
     color: #fff;
     border-radius: 40px 40px 40px 40px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -182,14 +161,6 @@ span{
     width: 50%;
     background-color: #ca803e;
 }
-/* .dot{
-    width: 220px;
-    position: absolute;
-    z-index: 1;
-    left: 100px;
-    z-index: 0;
-    left: 10%;
-} */
 .skill-col-1{
     margin: auto 0 auto 7%;
 }
@@ -197,7 +168,7 @@ span{
     font-family: "Montserrat";
     font-size: 4rem;
 }
-.fab{
+.fab, .cpp-img{
     margin: 0 1rem;
     font-size: 1.8rem;
 }
@@ -213,9 +184,6 @@ span{
 .fa-js-square{
     color: #be4e39 ;
 }
-/* .fa-cpp{
-    color: #a540ba ;
-} */
 .fa-python{
     color: #ca803e ;
 }
@@ -231,7 +199,7 @@ span{
     height: 5rem;
     border-radius: 1rem;
     display: inline-block;
-    /* padding: 2rem; */
+
     margin: 1rem;
     background-color: #f8f7aa;
 }
@@ -242,7 +210,6 @@ span{
 }
 .p-contact{
     color: #fff;
-    /* width: 50%; */
     text-align: center;
 }
 footer{
@@ -253,44 +220,35 @@ footer{
 footer p{
     font-size: 1rem;
 }
-/* @media screen and (max-width:1150px){
-    .timeline::after{
-        left:1%;
-    }
-    .container{
-        width: 100%;
-    }
-    .left, .right{
-        left:2%;
-    }
-} */
 @media screen and (max-width:1150px){
     .main{
         text-align: center;
     }
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:700px){
     h1{
         font-size: 5rem;
     }
     .web-img{
-        width: 30rem;
+        position: static;
+        width: 25rem;
     }
     .timeline::after{
         left:1%;
     }
-    .container{
+    .card{
         width: 100%;
+        margin: 1.5rem 0 0 0;
     }
     .left, .right{
         left:2%;
     }
 }
-@media screen and (max-width:520px){
-    h1{
-        font-size: 4rem;
-    }
-    .web-img{
-        width: 25rem;
-    }
+@media screen and (max-width:430px){
+   .skills-text{
+       font-size: 3rem;
+   }
+   .web-img{
+       width: 20rem;
+   }
 }
